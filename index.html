@@ -17,6 +17,68 @@
           width: 200px;
           height: 100px;
       }
+      #headers{
+        text-align: center;
+        font-size: 25px;
+      }
+      #input-parent{
+        position:relative;
+        left: 45%;
+      }
+      #inputview{
+        width: 192px;
+        height: 192px;
+        border-radius: 96px;
+        text-align: center;
+        font-size: 45px;
+      }
+      #inputview:focus{
+        outline: none;
+        overflow: hidden;
+      }
+      #submit{
+        position:absolute;
+        width: 65px;
+        height: 65px;
+        margin-top: 120px;
+        margin-left: -50px;
+        border-radius: 96px;
+      }
+      #submit:focus{
+        outline:none;
+      }
+      #ulBox{
+        width: 30%;
+        display: flex;
+        margin-left: 35%;
+        margin-top: 20px;
+        justify-content: space-around;
+
+      }
+      .Guessbox{
+        width: 90px;
+        height: 90px;
+        border-radius: 20px;
+        border-style: solid;
+        border-width: medium;
+        text-align:center;
+        font-size: 40px;
+        line-height: 90px;
+      }
+      #menu-btns{
+        position:relative;
+        margin-left: 46%;
+        margin-top: 50px;
+      }
+      .reset{
+        width: 90px;
+        height: 60px;
+      }
+      .hint{
+        width: 90px;
+        height: 60px;
+      }
+
       #footer {
           width: 100%;
           border-top: solid 2px black;
@@ -37,20 +99,29 @@
       <div id="app">
 
         <div id="headers">
-          <!-- Title and subtitles! -->
+          <h1> Number guessing game!</h1>
+          <h2> Guess a number from 1 to 100 </h2>
         </div>
 
         <div id="main">
           <div id="input-parent">
-            <!-- Player"s guess input, and submit button -->
+            <input id="inputview" name="InitalGuess" placeholder="#">
+            <input id="submit" type="button" class="submit" value="Go!">
           </div>
 
           <div id="guesses">
-            <!-- unordered list of guesses -->
+            <ul id="ulBox">
+              <li> <div class="Guessbox"> - </div> </li>
+              <li> <div class="Guessbox"> - </div> </li>
+              <li> <div class="Guessbox"> - </div> </li>
+              <li> <div class="Guessbox"> - </div> </li>
+              <li> <div class="Guessbox"> - </div> </li>
+            </ul>
           </div>
 
           <div id="menu-btns">
-            <!-- reset and hint buttons -->
+            <input id="reset" type="button" class="reset" value="Reset">
+            <input id="hint" type="button" class="hint" value="Hint">
           </div>
         </div>
       </div>
