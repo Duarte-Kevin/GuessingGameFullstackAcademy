@@ -1,0 +1,121 @@
+.center {
+  text-align: center;
+}
+
+body {
+  background: black;
+  font-family: monospace;
+  /* background-image: url('background.jpg') */
+}
+
+img {
+  display: inline;
+  width: 200px;
+  height: 100px;
+}
+
+#headers {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+#input-parent {
+  position: relative;
+  margin-left: 45%;
+}
+
+#inputview {
+  width: 192px;
+  height: 192px;
+  border-radius: 96px;
+  text-align: center;
+  font-size: 45px;
+  font-family: monospace;
+}
+
+#inputview:focus {
+  outline: none;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+#submit {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  margin-top: 120px;
+  margin-left: -50px;
+  border-radius: 96px;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+#submit:focus {
+  outline: none;
+}
+
+#guesses {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 20px;
+}
+
+#ulBox {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#ulBox>li {
+  margin: 10px;
+  width: 100%;
+  height: 50px;
+  background: blue;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: monospace;
+  font-size: 30px;
+}
+
+#menu-btns {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#menu-btns>input {
+  width: 90px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 20px;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+#footer {
+  width: 100%;
+  background: white;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.graceLogo {
+  width: 384px;
+  height: 80px;
+  margin-top: 8px;
+}
+
+.FSLogo {
+  width: 288px;;
+}

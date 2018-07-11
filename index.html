@@ -1,63 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Guessing Game</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="javascript" type="text/javascript" href="main.js">
-    <!-- Bootstrap and CSS here-->
 
-  </head>
-  <body>
+<head>
+  <title>Guessing Game</title>
+  <link rel="stylesheet" type="text/css" href="Style/style.css">
+  <!-- Bootstrap and CSS here-->
 
-      <div id="app">
+</head>
 
-        <div id="headers">
-          <h1> Number guessing game!</h1>
-          <h2> Guess a number from 1 to 100 </h2>
-        </div>
+<body>
 
-        <div id="main">
-          <div id="input-parent">
-            <input id="inputview" name="InitalGuess" placeholder="#">
-            <input id="submit" type="button" class="submit" value="Go!">
-          </div>
+  <div id="app">
 
-          <div id="guesses">
-            <ul id="ulBox">
-              <li> <div class="Guessbox"> - </div> </li>
-              <li> <div class="Guessbox"> - </div> </li>
-              <li> <div class="Guessbox"> - </div> </li>
-              <li> <div class="Guessbox"> - </div> </li>
-              <li> <div class="Guessbox"> - </div> </li>
-            </ul>
-          </div>
-
-          <div id="menu-btns">
-            <input id="reset" type="button" class="reset" value="Reset">
-            <input id="hint" type="button" class="hint" value="Hint">
-          </div>
-        </div>
-      </div>
-
-
-
-    <div id="footer">
-        <div class = "footerbox">
-          <div class="">
-            <img src="fa-logo@2x.png">
-          </div>
-
-          <div class="">
-            <h4>Project by Kevin Duarte</h4>
-          </div>
-
-          <div class="">
-            <img src="grace_hopper_academy.png">
-          </div>
-
-
-        </div>
+    <div id="headers">
+      <h1> Number guessing game!</h1>
+      <h2> Guess a number from 1 to 100 </h2>
+      <h3> </h3>
     </div>
 
-  </body>
+    <div id="main">
+      <div id="input-parent">
+        <input id="inputview" name="InitalGuess" placeholder="#">
+        <input id="submit" type="button" class="submit" value="Go!">
+      </div>
+
+      <div id="guesses">
+        <ul id="ulBox">
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+          <li>-</li>
+        </ul>
+      </div>
+
+      <div id="menu-btns">
+        <input id="reset" type="button" class="reset" value="Reset">
+        <input id="hint" type="button" class="hint" value="Hint">
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="footer">
+    <img class="FSLogo" src="Style/fa-logo@2x.png">
+    <h2>Project by Kevin Duarte</h2>
+    <img class="graceLogo" src="Style/grace_hopper_academy.png">
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="JS/main.js"></script>
+</body>
+
 </html>
